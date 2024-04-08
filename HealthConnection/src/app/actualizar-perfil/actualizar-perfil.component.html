@@ -1,0 +1,63 @@
+
+<section class="vh-100 gradient-custom background-image seccion">
+    <h1 class="seccion__title">{{title}}</h1>  
+    <form class="seccion__form">
+        
+        <label class="form_label" for="primerNombre" >
+            <input type="text" class="form-control " name="primerNombre" placeholder="Primer Nombre" [(ngModel)]="paciente.nombreCompletoPaciente.primerNombre" required>
+            <span class="required">*</span>
+        </label>
+
+        <label class="form_label" for="segundoNombre" >
+            <input type="text" class="form-control" name="segundoNombre" placeholder="Segundo Nombre" [(ngModel)]="paciente.nombreCompletoPaciente.segundoNombre">
+        </label>
+
+        <label class="form_label" for="primerApellido" >
+            <input type="text" class="form-control" name="primerApellido" placeholder="Primer Apellido" [(ngModel)]="paciente.nombreCompletoPaciente.primerApellido" required>
+            <span class="required">*</span>
+        </label>
+
+        <label class="form_label" for="segundoApellido" >
+            <input type="text" class="form-control" name="segundoApellido" placeholder="Segundo Apellido" [(ngModel)]="paciente.nombreCompletoPaciente.segundoApellido">
+        </label>
+
+        <label class="form_label" for="tipoIdentificacion">
+            <select class="form-control " name="tipoIdentificacion" [(ngModel)]="paciente.tipoIdentificacion.codigo" required>
+                <option value="" disabled hidden>tipo de identificación</option>
+                <option value="CC" >Cédula de Ciudadanía</option>
+                <option value="TI">Tarjeta de Identidad</option>
+                <option value="PP">Pasaporte</option>
+              </select>
+              <span class="required">*</span>
+
+        </label>
+
+        <label class="form_label" for="numeroIdentificacion" >
+            <input type="number" class="form-control" name="numeroIdentificacion" placeholder="Numero Identificacion" [(ngModel)]="paciente.numeroIdentificacion" required>
+            <span class="required">*</span>
+        </label>
+
+        <label class="form_label" for="correoElectronico" >
+            <input type="email" class="form-control" name="correoElectronico" placeholder="email" [(ngModel)]="paciente.contactoPaciente.correoElectronicoPaciente.correoElectronico" required>
+            <span class="required">*</span>
+        </label>
+
+        <label class="form_label" for="password" >
+            <input type="password" class="form-control" name="password" placeholder="password" [(ngModel)]="paciente.contactoPaciente.contrasenia" required>
+            <span class="required">*</span>
+        </label>
+
+        <label class="form_label" for="fechaNacimiento">
+            <input type="date" class="form-control" id="fechaNacimiento" name="fechaNacimiento" placeholder="Fecha Nacimiento" [(ngModel)]="paciente.fechaNacimiento" required>
+            <span class="required">*</span>
+        </label>
+
+        <label class="form_label" for="numeroTelefono">
+            <input type="text" class="form-control" id="numeroTelefono" name="numeroTelefono" placeholder="Numero Telefono" [(ngModel)]="paciente.contactoPaciente.numeroTelefonoPaciente.numeroTelefono" required>
+            <span class="required">*</span>
+        </label>
+
+        <button class="button" role="button" (click)="actualizar()">accept</button>
+
+    </form>
+</section>

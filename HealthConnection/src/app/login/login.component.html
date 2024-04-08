@@ -1,0 +1,25 @@
+<section class="vh-100 gradient-custom background-image" id="login">
+  <form >
+    <label class="label">
+      <fa-icon  [icon]="faUser"></fa-icon>
+      <input type="email" id="username" placeholder="username" id="correoElectronico" 
+      name="correoElectronico" [(ngModel)]="paciente.contactoPaciente.correoElectronicoPaciente.correoElectronico">
+    </label>
+
+    <label class="label">
+      <fa-icon [icon]="faLock"></fa-icon>
+      <input type="password" id="password" placeholder="password" id="contrasenia" 
+      name="contrasenia" [(ngModel)]="paciente.contactoPaciente.contrasenia">
+    </label>
+
+    <a href="#!" class="link">Forgot password?</a>
+
+    <button id="button" role="button" (click)="getCredenciales()" >Login</button>
+
+    <div>
+      <p class="mb-0">Don't have an account? <a href="principal/login/form"  class="register fw-bold">Sign Up</a>
+      </p>
+    </div>
+
+  </form>
+</section>

@@ -1,0 +1,85 @@
+<section class="vh-100 gradient-custom">
+    <nav class="nav__menu background-image" >
+        <div class="container__links">
+
+            <div class="items">
+                <svg class="item__logo" xmlns="http://www.w3.org/2000/svg" >
+                    <path d="m21.743 12.331-9-10c-.379-.422-1.107-.422-1.486 0l-9 10a.998.998 0 0 0-.17 1.076c.16.361.518.593.913.593h2v7a1 1 0 0 0 1 1h3a1 1 0 0 0 1-1v-4h4v4a1 1 0 0 0 1 1h3a1 1 0 0 0 1-1v-7h2a.998.998 0 0 0 .743-1.669z"></path>
+                </svg>
+                <a class="item_link" href="login/principal/{{id}}">Inicio</a>
+                
+            </div>
+
+            <div class="items">
+                <svg class="item__logo" xmlns="http://www.w3.org/2000/svg" >
+                    <path d="M4 6h16v2H4zm0 5h16v2H4zm0 5h16v2H4z"></path>
+                </svg>
+                <a class="item_link" (click)="toggleMenuOption()">Menú
+                    <div class="submenu" *ngIf="isMenuOpen">
+                        <a href="principal/agendarCita" (click)="verificarCita()">Citas medicas</a>
+                        <a href="#">Pagos en linea</a>
+                        <a href="#">Otros</a>
+                    </div>
+                </a>
+  
+            </div>
+                       
+            
+
+            <div class="items">
+                <svg class="item__logo" xmlns="http://www.w3.org/2000/svg" >
+                    <path d="M9.5 12c2.206 0 4-1.794 4-4s-1.794-4-4-4-4 1.794-4 4 1.794 4 4 4zm1.5 1H8c-3.309 0-6 2.691-6 6v1h15v-1c0-3.309-2.691-6-6-6z"></path>
+                    <path d="M16.604 11.048a5.67 5.67 0 0 0 .751-3.44c-.179-1.784-1.175-3.361-2.803-4.44l-1.105 1.666c1.119.742 1.8 1.799 1.918 2.974a3.693 3.693 0 0 1-1.072 2.986l-1.192 1.192 1.618.475C18.951 13.701 19 17.957 19 18h2c0-1.789-.956-5.285-4.396-6.952z"></path>
+                </svg>
+                
+                <a class="item_link"  href="#">Quienes somos</a>
+            </div>
+        </div>  
+          
+        <div class="container__logos">
+
+                  <a class="link__perfil"> 
+                   <svg class="item__logo logo__perfil"  xmlns="http://www.w3.org/2000/svg" ><path d="M12 2C6.579 2 2 6.579 2 12s4.579 10 10 10 10-4.579 10-10S17.421 2 12 2zm0 5c1.727 0 3 1.272 3 3s-1.273 3-3 3c-1.726 0-3-1.272-3-3s1.274-3 3-3zm-5.106 9.772c.897-1.32 2.393-2.2 4.106-2.2h2c1.714 0 3.209.88 4.106 2.2C15.828 18.14 14.015 19 12 19s-3.828-.86-5.106-2.228z"></path></svg>
+                   <div class="submenu__perfil">
+                    <a href="principal/login" *ngIf="!loggedIn()">Iniciar Sesión</a>
+                        <a href="principal/consultarPerfil/{{idPacienteRegistrado}}" *ngIf="loggedIn()">Consultar Cuenta</a>
+                        <a href="principal/editarPerfil/{{idPacienteRegistrado}}" *ngIf="loggedIn()">Actualizar Cuenta</a>
+                        <a href="#" *ngIf="loggedIn()">Eliminar Cuenta</a>
+                        <a *ngIf="loggedIn()" (click)="logout()">Cerrar Seción</a>
+                  </div>
+                </a>
+                <a class="link__llamada" href="#"> 
+                    <svg class="item__logo logo__llamada" xmlns="http://www.w3.org/2000/svg" ><path d="m20.487 17.14-4.065-3.696a1.001 1.001 0 0 0-1.391.043l-2.393 2.461c-.576-.11-1.734-.471-2.926-1.66-1.192-1.193-1.553-2.354-1.66-2.926l2.459-2.394a1 1 0 0 0 .043-1.391L6.859 3.513a1 1 0 0 0-1.391-.087l-2.17 1.861a1 1 0 0 0-.29.649c-.015.25-.301 6.172 4.291 10.766C11.305 20.707 16.323 21 17.705 21c.202 0 .326-.006.359-.008a.992.992 0 0 0 .648-.291l1.86-2.171a.997.997 0 0 0-.085-1.39z"></path></svg>
+                </a>
+
+        </div>
+
+    </nav>
+    <div class=" background-image-c">
+        <div class="gallery">
+
+            <div class="gallery_img" *ngFor="let image of getImagesBuffer1(); let i = index" >
+            <img [src]="image">
+            </div>
+            
+        </div>
+
+        <div class="container">
+            <div class="container_img" *ngFor="let image of getImagesBuffer2(); let i = index" >
+                <img [src]="image">
+        </div>
+    </div>
+</div>
+
+ </section>
+
+
+
+
+
+
+
+
+   
+
+

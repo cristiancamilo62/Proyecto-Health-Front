@@ -1,0 +1,93 @@
+:root{
+  --color_principal:rgba(7, 7, 165, 0.845);
+}
+
+.background-image {
+  background-image: url("src\img\principal.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+
+}
+#login {
+  padding-top: 280px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+
+}
+
+form {
+  max-width: 400px;
+  width: 100%;
+  padding: 20px;
+  
+ }
+
+ .label {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+/* Indicador de campo obligatorio */
+.label.required::after {
+  content: '*';
+  color: red;
+  margin-left: 5px;
+}
+
+/* Estilo para indicar un campo con error */
+.label.error {
+  color: red;
+}
+
+/* Estilo del ícono */
+.label fa-icon {
+  font-size: 18px;
+  margin-right: 10px;
+  color: var(--color_principal);
+}
+
+/* Estilo para el campo de entrada */
+.label input {
+  width: 100%;
+  box-sizing: border-box;
+  border-radius: 40px;
+  border: none;
+  outline: none;
+  background-color: white;
+  padding: 10px 40px 15px 10px ; /* Ajusta el espaciado según sea necesario */
+}
+
+.link {
+  text-decoration: none;
+  color: #000;
+  margin-left: 20px;
+}
+
+.link:hover {
+  text-decoration: underline;
+}
+
+button {
+  padding: 10px;
+  width: 100%;
+  background-color: var(--color_principal);
+  color: rgb(248, 247, 247);
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-top: 20px;
+}
+
+button:hover {
+  background-color:  rgb(72, 72, 232);
+  color: white;
+}
+.register{
+  color: var(--color_principal);
+}
+
