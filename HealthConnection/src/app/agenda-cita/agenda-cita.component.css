@@ -1,0 +1,7 @@
+.background-image {
+    background-image: url("src\assets\Citas.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+  
+  }

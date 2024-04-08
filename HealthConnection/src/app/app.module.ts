@@ -10,11 +10,14 @@ import { LoginComponent } from './login/login.component';
 import { PrincipalComponent } from './principal/principal.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AuthService } from './servicios/auth.service';
-import { AgendaComponent } from './agenda/agenda.component';
+import { AgendaCitaComponent } from './agenda-cita/agenda-cita.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { ConsultarPerfilComponent } from './perfil/consultar-perfil/consultar-perfil.component';
 import { ActualizarPerfilComponent } from './perfil/actualizar-perfil/actualizar-perfil.component';
 import { FormPacienteComponent } from './perfil/form-paciente/form-paciente.component';
+import { CalenderComponent } from './calender/calender.component';
+import { CommonModule } from '@angular/common';
+
 
 
 const routes: Routes = [
@@ -23,7 +26,7 @@ const routes: Routes = [
   { path: 'principal/login/form', component: FormPacienteComponent },
   { path: 'principal', component: PrincipalComponent },
   { path: 'principal/editarPerfil/:id', component: ActualizarPerfilComponent },
-  { path: 'principal/agendarCita', component: AgendaComponent },
+  { path: 'principal/agendarCita', component: AgendaCitaComponent },
   { path: 'principal/consultarPerfil/:id', component: ConsultarPerfilComponent }
 ];
 
@@ -32,11 +35,11 @@ const routes: Routes = [
     AppComponent,
     LoginComponent,
     PrincipalComponent,
-    AgendaComponent,
+    AgendaCitaComponent,
     ConsultarPerfilComponent,
     ActualizarPerfilComponent,
     FormPacienteComponent,
-
+    CalenderComponent,
   ],
   imports: [
     BrowserModule,
@@ -45,7 +48,8 @@ const routes: Routes = [
     RouterModule.forRoot(routes),
     ModalModule.forRoot(), 
     BrowserAnimationsModule,
-    FontAwesomeModule
+    FontAwesomeModule,
+    CommonModule ,
   ],
   providers: [AuthService],
   bootstrap: [AppComponent]
