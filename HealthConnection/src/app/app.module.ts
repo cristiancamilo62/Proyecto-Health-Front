@@ -7,18 +7,14 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
-import { RegistroCitasComponent } from './registro-citas/registro-citas.component';
-import { FormcitaComponent } from './registro-citas/formcita/formcita.component';
 import { PrincipalComponent } from './principal/principal.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AuthService } from './servicios/auth.service';
 import { AgendaComponent } from './agenda/agenda.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { ConsultarPerfilComponent } from './perfil/consultar-perfil/consultar-perfil.component';
-import { EliminarPerfilComponent } from './eliminar-perfil/eliminar-perfil.component';
 import { ActualizarPerfilComponent } from './perfil/actualizar-perfil/actualizar-perfil.component';
 import { FormPacienteComponent } from './perfil/form-paciente/form-paciente.component';
-import { ForgotPasswordComponent } from './forgot-password/forgot-password.component';
 
 
 const routes: Routes = [
@@ -35,15 +31,11 @@ const routes: Routes = [
   declarations: [
     AppComponent,
     LoginComponent,
-    RegistroCitasComponent,
-    FormcitaComponent,
     PrincipalComponent,
     AgendaComponent,
     ConsultarPerfilComponent,
-    EliminarPerfilComponent,
     ActualizarPerfilComponent,
     FormPacienteComponent,
-    ForgotPasswordComponent,
 
   ],
   imports: [
