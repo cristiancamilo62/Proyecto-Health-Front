@@ -1,5 +1,5 @@
 import { Component, Inject, OnInit } from '@angular/core';
-import { Paciente } from '../login/paciente';
+import { Paciente } from '../clases/paciente';
 import { PacienteService } from '../servicios/paciente.service';
 import { ActivatedRoute, Router } from '@angular/router';
 import { AuthService } from '../servicios/auth.service';

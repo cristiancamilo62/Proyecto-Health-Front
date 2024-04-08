@@ -1,5 +1,5 @@
 import { Component, Inject, OnInit, inject } from '@angular/core';
-import { Paciente } from './paciente';
+import { Paciente } from '../clases/paciente';
 import { Router } from '@angular/router';
 import { AuthService } from '../servicios/auth.service';
 import { faUser, faLock } from '@fortawesome/free-solid-svg-icons';

@@ -1,7 +1,7 @@
 import { Component, Inject, OnInit } from '@angular/core';
-import { PacienteService } from '../servicios/paciente.service';
+import { PacienteService } from '../../servicios/paciente.service';
 import { ActivatedRoute, Router } from '@angular/router';
-import { Paciente } from '../login/paciente';
+import { Paciente } from '../../clases/paciente';
 
 @Component({
   selector: 'app-actualizar-perfil',

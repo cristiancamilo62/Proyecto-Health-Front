@@ -14,10 +14,10 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AuthService } from './servicios/auth.service';
 import { AgendaComponent } from './agenda/agenda.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
-import { ConsultarPerfilComponent } from './consultar-perfil/consultar-perfil.component';
+import { ConsultarPerfilComponent } from './perfil/consultar-perfil/consultar-perfil.component';
 import { EliminarPerfilComponent } from './eliminar-perfil/eliminar-perfil.component';
-import { ActualizarPerfilComponent } from './actualizar-perfil/actualizar-perfil.component';
-import { FormPacienteComponent } from './form-paciente/form-paciente.component';
+import { ActualizarPerfilComponent } from './perfil/actualizar-perfil/actualizar-perfil.component';
+import { FormPacienteComponent } from './perfil/form-paciente/form-paciente.component';
 import { ForgotPasswordComponent } from './forgot-password/forgot-password.component';
 
 
